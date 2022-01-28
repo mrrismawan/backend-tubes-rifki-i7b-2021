@@ -1,0 +1,59 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWEiOiJSaWZraSIsImVtYWlsIjoicmlma2ltb2NoYW1hZEBzdG1rZy5hYy5pZCIsImlhdCI6MTY0MTcxNDMxNCwiZXhwIjoxNjQxNzE0MzI5fQ.CSSATPzCklp7n59ClfMCoXUpEEvIzK-1yT4vvD1KwP0
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "nama": "Rifki",
+    "email": "rifkimochamad@stmkg.ac.id",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "rifkimochamad@stmkg.ac.id",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
+
+
+###
+GET http://localhost:5000/
+
+###
+GET http://localhost:5000/1
+
+###
+POST http://localhost:5000/
+Content-Type: application/json
+
+{
+    "kode_alat": "14000",
+    "nama_alat": "ARG Test",
+    "jenis_alat": "ARG"
+}
+
+###
+PATCH http://localhost:5000/1
+Content-Type: application/json
+
+{
+    "kode_alat": "150278",
+    "nama_alat": "ARG Banjar Irigasi",
+    "jenis_alat": "ARG",
+    "pm_alat_1": "tws" 
+}
+
+###
+DELETE http://localhost:5000/2
